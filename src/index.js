@@ -45,7 +45,7 @@ app.use(async (ctx, next) => {
 const PORT = process.env.PORT || 8080;
 
 const server = http.createServer(app.callback());
-const wss = new WS.WebSocketServer({server});
+const wss = new WS.Server({server});
 
 const chatUsers = [];
 const chatMessages = [];
