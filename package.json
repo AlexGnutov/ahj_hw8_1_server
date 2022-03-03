@@ -1,0 +1,26 @@
+{
+  "name": "ahj_hw7_1_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "author": "coursar",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/router": "^10.0.0",
+    "http-event-stream": "^0.2.0",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-combine-routers": "^4.0.2",
+    "koa-static": "^5.0.0",
+    "nodemon": "^2.0.15",
+    "uuid": "^8.3.2",
+    "ws": "^8.5.0"
+  },
+  "engines": {
+    "node": "v16.13.1"
+  }
+}
