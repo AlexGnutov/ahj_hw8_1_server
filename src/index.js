@@ -42,7 +42,8 @@ app.use(async (ctx, next) => {
     }
 });
 
-const port = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
+
 const server = http.createServer(app.callback());
 const wss = new WS.WebSocketServer({server});
 
@@ -125,4 +126,4 @@ wss.on('connection', (ws, req) => {
     })
 });
 
-server.listen(port);
+server.listen(PORT, () => console.log(`Listening on ${PORT}`));
